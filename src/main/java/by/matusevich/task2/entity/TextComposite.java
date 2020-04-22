@@ -6,6 +6,9 @@ import java.util.Objects;
 
 public class TextComposite implements TextComponent {
 
+    private final static String PARAGRAPH_SPLIT = "\n    ";
+    private final static String WORD_SPLIT = " ";
+
     private List<TextComponent> components = new ArrayList<>();
     private ComponentType type;
 
@@ -51,23 +54,19 @@ public class TextComposite implements TextComponent {
     public String toString() {
 
         StringBuilder stringComponents = new StringBuilder();
-
         for (TextComponent textComponent: components) {
-
-
             switch (textComponent.getType()) {
 
                 case PARAGRAPH:
-                    stringComponents.append("\n    ");
+                    stringComponents.append(PARAGRAPH_SPLIT);
                     break;
 
                 case WORD:
-                    stringComponents.append(" ");
+                    stringComponents.append(WORD_SPLIT);
                     break;
             }
             stringComponents.append(textComponent.toString());
         }
-
         return stringComponents.toString();
     }
 }

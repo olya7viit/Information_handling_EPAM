@@ -8,12 +8,12 @@ import java.util.regex.Pattern;
 
 public class ExpressionCalculator {
 
-    List<Character> operators = new ArrayList<>();
+    private List<Character> operators = new ArrayList<>();
 
     private final static String REGEX_OPERATORS_SPLIT = "[+-/*]";
 
     private void parse(String expression) {
-        for (String lexeme : expression.split("\\p{Blank}+")) {
+        for (String lexeme : expression.split(" ")) {
             if (lexeme.isEmpty()) {
                 continue;
             }

@@ -1,8 +1,10 @@
-package by.matusevich.task2.parser;
+package by.matusevich.task2.parser.impl;
 
 import by.matusevich.task2.entity.TextComponent;
 import by.matusevich.task2.entity.TextComposite;
 import by.matusevich.task2.entity.ComponentType;
+import by.matusevich.task2.exception.ImpossibleOperationException;
+import by.matusevich.task2.parser.TextParser;
 
 public class ParagraphParser extends TextParser {
 
@@ -13,7 +15,7 @@ public class ParagraphParser extends TextParser {
     }
 
     @Override
-    public TextComponent parse(String text) {
+    public TextComponent parse(String text) throws ImpossibleOperationException {
         TextComponent componentSentences = new TextComposite(ComponentType.TEXT);
 
         String[] paragraphs = text.split(REGEX_PARAGRAPH_SPLIT);

@@ -1,9 +1,10 @@
-package by.matusevich.task2.parser;
+package by.matusevich.task2.parser.impl;
 
 import by.matusevich.task2.entity.Symbol;
 import by.matusevich.task2.entity.TextComponent;
 import by.matusevich.task2.entity.TextComposite;
 import by.matusevich.task2.entity.ComponentType;
+import by.matusevich.task2.exception.ImpossibleOperationException;
 import by.matusevich.task2.parser.TextParser;
 
 import java.util.regex.Pattern;

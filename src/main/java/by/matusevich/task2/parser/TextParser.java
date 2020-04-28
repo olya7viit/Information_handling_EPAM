@@ -1,6 +1,7 @@
 package by.matusevich.task2.parser;
 
 import by.matusevich.task2.entity.TextComponent;
+import by.matusevich.task2.exception.ImpossibleOperationException;
 
 public abstract class TextParser {
 
@@ -13,5 +14,5 @@ public abstract class TextParser {
         this.nextParser = nextParser;
     }
 
-    public abstract TextComponent parse(String text);
+    public abstract TextComponent parse(String text) throws ImpossibleOperationException;
 }

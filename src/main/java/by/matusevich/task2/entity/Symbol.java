@@ -1,5 +1,7 @@
 package by.matusevich.task2.entity;
 
+import by.matusevich.task2.exception.ImpossibleOperationException;
+
 import java.util.List;
 
 public class Symbol implements TextComponent {
@@ -14,18 +16,18 @@ public class Symbol implements TextComponent {
     }
 
     @Override
-    public void add(TextComponent component) {
-        throw new UnsupportedOperationException("Cannot be added to leaf");
+    public void add(TextComponent component)  {
+
     }
 
     @Override
-    public List<TextComponent> getComponents() {
-        return null;
-    }
-
-    @Override
-    public void remove(TextComponent component) {
+    public List<TextComponent> getComponents()  {
         throw new UnsupportedOperationException("Cannot be removed to leaf");
+    }
+
+    @Override
+    public void remove(TextComponent component)  {
+
     }
 
     @Override

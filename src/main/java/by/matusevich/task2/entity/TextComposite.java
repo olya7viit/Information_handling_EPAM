@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class TextComposite implements TextComponent {
 
-    private final static String PARAGRAPH_SPLIT = "\n    ";
+    private final static String PARAGRAPH_SPLIT = "\n\t";
     private final static String WORD_SPLIT = " ";
 
     private List<TextComponent> components = new ArrayList<>();

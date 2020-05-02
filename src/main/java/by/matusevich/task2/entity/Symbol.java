@@ -1,7 +1,5 @@
 package by.matusevich.task2.entity;
 
-import by.matusevich.task2.exception.ImpossibleOperationException;
-
 import java.util.List;
 
 public class Symbol implements TextComponent {
@@ -27,7 +25,6 @@ public class Symbol implements TextComponent {
 
     @Override
     public void remove(TextComponent component)  {
-
     }
 
     @Override

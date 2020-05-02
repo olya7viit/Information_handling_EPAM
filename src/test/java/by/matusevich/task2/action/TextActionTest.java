@@ -1,8 +1,6 @@
 package by.matusevich.task2.action;
 
-import by.matusevich.task2.entity.ComponentType;
 import by.matusevich.task2.entity.TextComponent;
-import by.matusevich.task2.entity.TextComposite;
 import by.matusevich.task2.exception.FileReadingException;
 import by.matusevich.task2.exception.ImpossibleOperationException;
 import by.matusevich.task2.parser.TextParser;
@@ -29,6 +27,7 @@ public class TextActionTest {
     @Test
     public void sortParagraphs_text_true() throws ImpossibleOperationException {
         textAction.sortParagraphs(textComponent);
+
     }
 
 }
